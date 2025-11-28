@@ -1,0 +1,18 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "loginUser": "teste@teste.com",
+  "loginPassword": "teste123",
+  "executionArgs": {
+    "projectName": "foodvision-frontend",
+    "projectPath": "f:\\Backup Sites\\foodvision",
+    "testIds": [],
+    "additionalInstruction": "",
+    "envs": {
+      "API_KEY": "sk-user-J4Z34RGfuctS9tcYoLaBDlLgAPpG8UA3mL2GpBFX56a12oDqWwDdCeHAlaTRLu49UgucGYv13CM87iLOWj4JHi83VkJ6nz1Pp6CQJdx4QzXDrgL-_eWMQRc1ERNtalybdKo"
+    }
+  },
+  "proxy": "http://a48a8a19-8951-4c0a-9549-eaae9efab532:STjJVO5frpvvSOdTG1ljpaS8YUEFq3qC@tun.testsprite.com:8080"
+}

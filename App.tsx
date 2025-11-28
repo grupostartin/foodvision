@@ -10,6 +10,7 @@ import Pricing from './components/Pricing';
 import Footer from './components/Footer';
 import Dashboard from './components/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
+import WhatsAppButton from './components/WhatsAppButton';
 
 const LandingPage: React.FC = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -17,6 +18,7 @@ const LandingPage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col font-sans overflow-x-hidden">
       {showAnimation && <EntranceAnimation onComplete={() => setShowAnimation(false)} />}
+      <WhatsAppButton />
       <Header />
       <main className="flex-grow">
         <Hero />

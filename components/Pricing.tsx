@@ -11,7 +11,10 @@ const Pricing: React.FC = () => {
 
   const handlePlanSelect = async (url?: string) => {
     if (!url) {
-      window.location.href = "#contato";
+      const phoneNumber = '5531982781618';
+      const message = encodeURIComponent('Olá, vim do site FoodVision.');
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+      window.open(whatsappUrl, '_blank');
       return;
     }
 

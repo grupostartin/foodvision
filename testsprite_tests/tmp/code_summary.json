@@ -1,0 +1,25 @@
+{
+  "tech_stack": ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Supabase", "Lucide React"],
+  "features": [
+    {
+      "name": "Authentication",
+      "description": "User authentication modal and protected routes",
+      "files": ["components/AuthModal.tsx", "components/ProtectedRoute.tsx"]
+    },
+    {
+      "name": "Dashboard",
+      "description": "User dashboard and Admin dashboard for managing content and users",
+      "files": ["components/Dashboard.tsx", "components/AdminDashboard.tsx"]
+    },
+    {
+      "name": "Landing Page Components",
+      "description": "Hero section, pricing, social proof, and problem/solution sections",
+      "files": ["components/Hero.tsx", "components/Pricing.tsx", "components/SocialProof.tsx", "components/ProblemSection.tsx", "components/SolutionSection.tsx"]
+    },
+    {
+      "name": "UI Components",
+      "description": "Reusable UI components like Before/After slider and Entrance animation",
+      "files": ["components/BeforeAfterSlider.tsx", "components/EntranceAnimation.tsx", "components/Header.tsx", "components/Footer.tsx"]
+    }
+  ]
+}
