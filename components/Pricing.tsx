@@ -26,7 +26,7 @@ const Pricing: React.FC = () => {
       const checkoutUrl = new URL(url);
       checkoutUrl.searchParams.set('email', session.user.email || '');
       // Pode adicionar outros metadados se o Cakto suportar (ex: customer_id)
-      window.location.href = checkoutUrl.toString();
+      window.open(checkoutUrl.toString(), '_blank');
     } else {
       // Usuário não logado -> Abrir modal
       setPendingCheckoutUrl(url);
@@ -41,7 +41,7 @@ const Pricing: React.FC = () => {
       // Redirecionar para checkout após login/cadastro
       const checkoutUrl = new URL(pendingCheckoutUrl);
       checkoutUrl.searchParams.set('email', user.email || '');
-      window.location.href = checkoutUrl.toString();
+      window.open(checkoutUrl.toString(), '_blank');
       setPendingCheckoutUrl(null);
     }
   };
