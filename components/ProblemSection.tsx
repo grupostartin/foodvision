@@ -51,7 +51,7 @@ const ProblemSection: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-display font-bold text-text mb-4">
-            Seu cardápio está <span className="text-primary decoration-secondary decoration-wavy underline underline-offset-4">espantando</span> clientes?
+            Seu cardápio está <span className="text-primary decoration-secondary decoration-wavy underline underline-offset-8">espantando</span> clientes?
           </h2>
           <p className="text-muted max-w-2xl mx-auto text-lg">
             No iFood, a foto é o garçom. Se a apresentação for ruim, o cliente nem pede o cardápio.
