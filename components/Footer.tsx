@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './ui/Button';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -37,9 +38,16 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex space-x-6 text-muted text-sm font-medium">
-            <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
-            <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
-            <a href="#" className="hover:text-primary transition-colors">Contato</a>
+            <Link to="/termos-de-uso" className="hover:text-primary transition-colors">Termos de Uso</Link>
+            <Link to="/politica-de-privacidade" className="hover:text-primary transition-colors">Política de Privacidade</Link>
+            <a
+              href="https://wa.me/5531982781618?text=Olá,%20vim%20do%20site%20FoodVision."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              Contato
+            </a>
           </div>
 
           <div className="flex space-x-4">

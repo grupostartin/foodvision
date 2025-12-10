@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import Dashboard from './components/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import WhatsAppButton from './components/WhatsAppButton';
+import TermsOfService from './components/TermsOfService';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 const LandingPage: React.FC = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -36,6 +38,8 @@ const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/termos-de-uso" element={<TermsOfService />} />
+      <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
       <Route
         path="/dashboard"
         element={

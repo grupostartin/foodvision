@@ -43,7 +43,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterProps> = ({ beforeImage, afterImage
         <img
           src={showAfter ? afterImage : beforeImage}
           alt={showAfter ? "After editing" : "Before editing"}
-          className={`w-full h-full object-cover transition-all duration-500 ${!showAfter ? 'grayscale brightness-75' : ''}`}
+          className="w-full h-full object-cover transition-all duration-500"
         />
 
         <div className="absolute top-4 left-4 right-4 flex justify-between items-center z-10">
@@ -80,7 +80,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterProps> = ({ beforeImage, afterImage
         <img
           src={beforeImage}
           alt="Before editing"
-          className="absolute top-0 left-0 w-full h-full object-cover grayscale brightness-75"
+          className="absolute top-0 left-0 w-full h-full object-cover"
         />
 
         {/* Badge Before */}

@@ -36,7 +36,7 @@ const Pricing: React.FC = () => {
 
   const handleAuthSuccess = (user: any) => {
     setIsAuthModalOpen(false);
-    
+
     if (pendingCheckoutUrl) {
       // Redirecionar para checkout após login/cadastro
       const checkoutUrl = new URL(pendingCheckoutUrl);
@@ -62,11 +62,17 @@ const Pricing: React.FC = () => {
       checkoutUrl: "https://pay.cakto.com.br/3fi3885_669632"
     },
     {
-      name: "Franquia",
-      price: "Sob Consulta",
-      features: ["50+ Fotos", "Gestão de Múltiplos Cardápios", "Padronização Visual", "Suporte Dedicado"],
+      name: "Master",
+      price: "R$ 389",
+      features: [
+        "Tudo dos planos anteriores",
+        "Fotos Profissionais Ilimitadas",
+        "Gestão de Tráfego Pago Grátis por 15 Dias",
+        "Padronização Visual",
+        "Suporte Dedicado"
+      ],
       highlight: false,
-      checkoutUrl: "" // Sob consulta
+      checkoutUrl: "" // A ser definido
     }
   ];
 
@@ -125,7 +131,7 @@ const Pricing: React.FC = () => {
         </div>
       </div>
 
-      <AuthModal 
+      <AuthModal
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
         onSuccess={handleAuthSuccess}
