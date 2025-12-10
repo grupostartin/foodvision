@@ -13,6 +13,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import WhatsAppButton from './components/WhatsAppButton';
 import TermsOfService from './components/TermsOfService';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import SocialProofNotification from './components/SocialProofNotification';
 
 const LandingPage: React.FC = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -21,6 +22,7 @@ const LandingPage: React.FC = () => {
     <div className="min-h-screen flex flex-col font-sans overflow-x-hidden">
       {showAnimation && <EntranceAnimation onComplete={() => setShowAnimation(false)} />}
       <WhatsAppButton />
+      <SocialProofNotification />
       <Header />
       <main className="flex-grow">
         <Hero />
